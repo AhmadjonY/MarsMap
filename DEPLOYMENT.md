@@ -1,3 +1,15 @@
+## Netlify frontend
+
+`netlify.toml` configures Vite to build the frontend and publish `dist/`.
+All application styles load through `src/styles.css` from `index.html`;
+`main.js` imports the JavaScript modules, and the 3D terrain module loads on demand.
+Opening the source HTML directly cannot resolve the npm dependencies; use the deployed Vite output.
+
+This configuration publishes the frontend only. The existing Python API does not run
+on Netlify with this configuration. Routes under `/api/` (including expedition planning,
+terrain, panorama metadata, weather and S.A.M) require a separate backend integration.
+The Python hosting instructions below describe the existing full-stack setup.
+
 # Python-only server startup
 
 The release contains a fresh `dist/` build. Node/Vite are not used to run the server.
