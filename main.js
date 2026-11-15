@@ -7,11 +7,7 @@ import { LineSegmentsGeometry } from 'three/addons/lines/LineSegmentsGeometry.js
 import { PanoramaViewer } from './src/panorama.js';
 import { createMissionHotspots } from './src/mission-hotspots.js';
 import { routeWidth } from './src/routes.js';
-import './src/mission-ui.css';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-import './style.css';
-import './src/extra.css';
-import './src/welcome.css';
 import { NASA_CONFIG, LAYERS, MISSIONS } from './src/config.js';
 import { detectQuality } from './src/device.js';
 
@@ -31,11 +27,8 @@ import { CanvasMapRenderer } from './src/canvas-fallback.js';
 import { TrekLOD } from './src/lod.js';
 import { fetchWeather, WEATHER_PAGE } from './src/weather.js';
 import { initExpedition, LEG_COLORS } from './src/expedition.js';
-import './src/expedition.css';
 import { initNavigator } from './src/navigator.js';
 import { createRoutePins } from './src/route-pins.js';
-import './src/navigator.css';
-import './src/theme.css';
 import {
   latLonToVector3,
   vector3ToLatLon,

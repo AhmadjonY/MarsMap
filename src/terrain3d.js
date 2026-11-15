@@ -2,7 +2,6 @@
 // MOLA elevation draped with the NASA Viking colour mosaic, lit by the real Sun position for the chosen
 // date and local time, under a Martian sky with adjustable dust, plus computed surface conditions.
 // Loaded on demand (dynamic import) so the main bundle stays small.
-import './terrain3d.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { Line2 } from 'three/addons/lines/Line2.js';
